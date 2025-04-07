@@ -24,6 +24,26 @@ int main(){
         else break;
     }
     temp->next=NULL;
-    printf("1");
-
+    // printf("1");
+    temp=head;
+    printf("before: \n");
+    while(temp!=NULL){
+        printf("%d->" , temp->data);
+        temp=temp->next;
+    }
+    printf("NULL\n");
+    temp=head;
+    while(temp->next!=NULL){
+        if(temp->data==temp->next->data){
+            temp->next=temp->next->next;
+        }
+        else temp=temp->next;
+    }
+    temp=head;
+    printf("after: \n");
+    while(temp!=NULL){
+        printf("%d->" , temp->data);
+        temp=temp->next;
+    }
+    printf("NULL\n");
 }
