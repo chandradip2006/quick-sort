@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
+#include<queue>
 using namespace std;
-#define ll long long
 class node{
     public:
         int data;
@@ -12,22 +12,21 @@ class node{
             right = NULL;
         }
 };
-int level(node* root){
-    if(root==NULL){
-        return 0;
+
+void bfs(node* root){  // BFS
+    queue<node*>q;
+    q.push(root);
+    while(!q.empty()){
+        if(q.front()!=NULL){
+            cout<<q.front()->data<<" ";
+            q.push(q.front()->left);
+            q.push(q.front()->right);
+            q.pop();
+        }
+        else{
+            q.pop();
+        }
     }
-    return max(level(root->left),level(root->right))+1;
-}
-void nthlevel(node* root , int n){
-    if(root == NULL){
-        return;
-    }
-    if(n == 1){
-        cout<<root->data<<" ";
-        return;
-    }
-    nthlevel(root->left , n-1);
-    nthlevel(root->right , n-1);
 }
 int main(){
     node* a=new node(2);
@@ -68,8 +67,5 @@ int main(){
     c->right=p;
     f->left=n;
 
-    int count=level(root);
-    for(int i=1;i<=count;i++){
-        nthlevel(root,i);
-    }
+    bfs(root);
 }

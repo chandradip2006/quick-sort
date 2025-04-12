@@ -1,0 +1,1 @@
+{"name":"Local: Lady_Bug","url":"/workspaces/quick-sort/Lady_Bug.cpp","tests":[{"id":1744390892807,"input":"4\n3\n000\n000\n6\n010001\n010111\n5\n10000\n01010\n2\n11\n00","output":"YES\nYES\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/quick-sort/Lady_Bug.cpp","group":"local","local":true}

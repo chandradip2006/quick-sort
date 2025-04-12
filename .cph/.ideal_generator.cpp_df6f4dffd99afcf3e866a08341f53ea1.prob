@@ -1,0 +1,1 @@
+{"name":"Local: ideal_generator","url":"/workspaces/quick-sort/ideal_generator.cpp","tests":[{"id":1744389790012,"input":"5\n1\n2\n3\n73\n1000","output":"YES\nNO\nYES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/quick-sort/ideal_generator.cpp","group":"local","local":true}
