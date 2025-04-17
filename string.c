@@ -9,7 +9,7 @@ int main(){
         arr[count-1]=ch;
         count++;
         char* ptr =(char*)realloc(arr , count*sizeof(char));
-        if(ptr==NULL){
+        if(ptr!=NULL){
             arr=ptr;
         }
         scanf("%c" , &ch);

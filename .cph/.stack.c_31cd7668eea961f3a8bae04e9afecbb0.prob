@@ -1,0 +1,1 @@
+{"name":"Local: stack","url":"/workspaces/quick-sort/stack.c","tests":[{"id":1744541782975,"input":"top\ntop\npop\ntop\npush 1\ntop\npop\nempty?\npush 1\npush 2\npush 3\npush 4\ntop\npop\npush 9\nempty?\ntop\npop\ntop\nempty?\nexit","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/workspaces/quick-sort/stack.c","group":"local","local":true}
